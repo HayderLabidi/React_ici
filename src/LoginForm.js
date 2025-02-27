@@ -6,15 +6,18 @@ export class LoginFormC extends React.Component {
     password: "",
   };
 
-  componentDidMount() {
-    console.log("class Component did mount");
-  }
-  componentDidUpdate() {
-    console.log("class Component did update");
-  }
-  componentWillUnmount() {
-    console.log("class Component will unmount");
-  }
+  // componentDidMount() {
+  //   console.log("class Component did mount");
+  // }
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.email !== this.state.email) {
+  //     console.log("class Component: email did update");
+  //   }
+  //   console.log("class Component did update");
+  // }
+  // componentWillUnmount() {
+  //   console.log("class Component will unmount");
+  // }
   handleEmail = (e) => {
     this.setState({
       email: e.target.value,
@@ -50,13 +53,19 @@ export function LoginFormF() {
   useEffect(() => {
     console.log("Functional Component did mount");
     return () => {
-      console.log("Functional Component will unmount");
-    };
-  }, []);
+      console.log("class Component will unmount");
+    }
+  },[]);
   useEffect(() => {
+    if (email === '')
+      return;
     console.log("Functional Component did update");
-  }, [email, password]);
-
+  });
+  useEffect(() => {
+    if (email === '')
+      return;
+    console.log("Functional Component: email did update");
+  },[email]);
 
   function handleEmail(e) {
     setEmail(e.target.value);
