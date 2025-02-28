@@ -58,7 +58,7 @@ const data = {
         rating: 3.5,
         numReviews: 45,
         discription: "High quality product",
-        CountInStock: "3",
+        CountInStock: "0",
       },
       {
         _id: 6,

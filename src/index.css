@@ -113,3 +113,11 @@ img.large {
 .top {
   align-items: flex-start;
 }
+
+.success {
+  color: green;
+}
+.failed {
+  color: red;
+}
+

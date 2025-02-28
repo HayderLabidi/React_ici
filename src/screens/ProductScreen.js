@@ -47,7 +47,19 @@ export default function ProductScreen() {
                       <li>
                         <div className='row'>
                           <div>Status: </div>
+                          <div>
+                            {/* TERNER  === if else */}
+                            {product.CountInStock > 0 ?(
+                              <span className='success'>In stock</span>
+                            ):(
+                              <span className='failed'>Unvaialble</span>
+                            )
+                          }
+                          </div>
                         </div>
+                      </li>
+                      <li>
+                        <button className='primary block'></button>
                       </li>
                     </ul>
                   </div>
