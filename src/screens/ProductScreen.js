@@ -5,22 +5,53 @@ import Rating from '../components/Rating';
 
 export default function ProductScreen() {
     const { id } = useParams();
-    const product = data.products.find((x) => x._id = Number(id) );
+    const product = data.products.find((x) => x._id === Number(id) );
     return (
       <div>
         <Link to='/'>Back to result</Link>
         <div className="row top">
-            <div className="col1">
+            <div className="col-2">
                 <img className="large" src={product.image} alt={product.name} />
-                <h2>{product.name}</h2>
-                <Rating rating={product.rating} numReviews={product.numReviews} />
-                <div className="price">${product.price}</div>
-                <p>
-                    <strong>Brand:</strong> {product.brand}
-                </p>
-                <p>
-                    <strong>Category:</strong> {product.category}
-                </p>
+                <div className="col-1">
+                  <ul>
+                    <li>
+                      <h1>{product.name}</h1>
+                    </li>
+                    <li>
+                      <Rating rating={product.rating}></Rating>
+                    </li>
+                    <li>
+                      Price: ${product.price}
+                    </li>
+                    <li>
+                      Category: {product.category}
+                    </li>
+                    <li>
+                      Description: <p>{product.description}</p>
+                    </li>
+                  </ul>
+                </div>
+                <div className='col-1'>
+                  <div className='card card-body'>
+                    <ul>
+                      <li>
+                        <div className='row'> 
+                          <div>
+                            Price:
+                          </div>
+                          <div className='price'>
+                            ${product.price}
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className='row'>
+                          <div>Status: </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </div>
         </div>
         </div>

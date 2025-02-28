@@ -97,3 +97,19 @@ font-size: 2rem;
 color: #f0c040;
 margin: 0.1rem;
 }
+.col-1 {
+  flex: 1 1 25rem;
+}
+
+.col-2{
+  flex: 2 1 50rem;
+
+}
+
+img.large {
+  width: 20vw;
+}
+
+.top {
+  align-items: flex-start;
+}
