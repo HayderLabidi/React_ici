@@ -1,15 +1,17 @@
 import React from 'react';
 import data from '../Data';
-import { useParams } from 'react-router-dom';
+import { useParams , Link} from 'react-router-dom';
 import Rating from '../components/Rating';
 
-export default function ProductScreen(props) {
+export default function ProductScreen() {
     const { id } = useParams();
-    const product = data.products.find((x) => x._id === id);
+    const product = data.products.find((x) => x._id = Number(id) );
     return (
-        <div className="card">
-            <div className="card-body">
-                <img className="medium" src={product.image} alt={product.name} />
+      <div>
+        <Link to='/'>Back to result</Link>
+        <div className="row top">
+            <div className="col1">
+                <img className="large" src={product.image} alt={product.name} />
                 <h2>{product.name}</h2>
                 <Rating rating={product.rating} numReviews={product.numReviews} />
                 <div className="price">${product.price}</div>
@@ -20,6 +22,7 @@ export default function ProductScreen(props) {
                     <strong>Category:</strong> {product.category}
                 </p>
             </div>
+        </div>
         </div>
     );
 }

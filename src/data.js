@@ -1,10 +1,10 @@
 const data = {
     products: [
       {
-        _id: '1',
+        _id: 1,
         name: 'Nike Slim Shirt',
         category: 'Sport',
-        image: 'image/img.jpeg'   
+        image: '/image/img.jpeg'   
         ,price: 120,
         brand: 'Nike',
         rating: 5,
@@ -14,7 +14,7 @@ const data = {
         _id: '2',
         name: 'Adidas Shoes',
         category: 'Sport',
-        image: 'image/adidas.avif',
+        image: '/image/adidas.avif',
         price: 250,
         brand: 'Adidas',
         rating: 4,
@@ -24,7 +24,7 @@ const data = {
         _id: '3',
         name: 'Apple Watch Series 8',
         category: 'Electronics',
-        image: 'image/apple.jpg',
+        image: '/image/apple.jpg',
         price: 399,
         brand: 'Apple',
         rating: 4.5,
@@ -34,7 +34,7 @@ const data = {
         _id: '4',
         name: 'Sony Noise-Cancelling Headphones',
         category: 'Electronics',
-        image: 'image/headphones.jpg',
+        image: '/image/headphones.jpg',
         price: 199,
         brand: 'Sony',
         rating: 2.5,
@@ -44,7 +44,7 @@ const data = {
         _id: '5',
         name: 'Levi’s Jeans',
         category: 'Fashion',
-        image: 'image/levis.jpg',
+        image: '/image/levis.jpg',
         price: 80,
         brand: 'Levi’s',
         rating: 3.5,
@@ -54,7 +54,7 @@ const data = {
         _id: '6',
         name: 'Pull & Bear',
         category: 'Fashion',
-        image: 'image/pull&bear.jpeg',
+        image: '/image/pull&bear.jpeg',
         price: 180,
         brand: 'P&B',
         rating: 3,

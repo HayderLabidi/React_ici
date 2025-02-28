@@ -20,7 +20,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<HomeScreen/>}></Route>
+          <Route path="/" element={<HomeScreen/>}/>
           <Route path="/product/:id" element={<ProductScreen />} /> 
         </Routes>
       </main>
