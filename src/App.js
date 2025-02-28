@@ -1,6 +1,4 @@
 import "./App.css";
-// import Data from "./Data";
-// import Product from "./components/Product";
 import HomeScreen from "./screens/HomeScreen"
 import { BrowserRouter,Route, Routes } from "react-router-dom";
 import ProductScreen from "./screens/ProductScreen"
