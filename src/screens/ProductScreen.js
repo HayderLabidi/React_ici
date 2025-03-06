@@ -52,14 +52,14 @@ export default function ProductScreen() {
                             {product.CountInStock > 0 ?(
                               <span className='success'>In stock</span>
                             ):(
-                              <span className='failed'>Unvaialble</span>
+                              <span className='danger'>Unvaialble</span>
                             )
                           }
                           </div>
                         </div>
                       </li>
                       <li>
-                        <button className='primary block'></button>
+                        <button className='primary block'>Add to cart</button>
                       </li>
                     </ul>
                   </div>
